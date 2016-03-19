@@ -247,7 +247,7 @@ nav a {
 /*  float student name at bottom to left side and set font properties and margins */
 .student-name {
   float: left;
-  font-size: 0.83em;
+  font-size: 1em;
   font-weight: bold;
   margin-top: 2px;
   margin-bottom: 2px;
@@ -285,13 +285,13 @@ a.social {
   transition: all .5s;
 }
 a.twitter {
-  background-image: url(images/twitter.svg);
+  background-image: url(../img/twitter.svg);
 }
 a.linkedin {
-  background-image: url(images/linkedin.svg);
+  background-image: url(../img/linkedin.svg);
 }
 a.github {
-  background-image: url(images/github.svg);
+  background-image: url(../img/github.svg);
 }
 a.social:hover {
   opacity: 1;
