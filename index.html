@@ -1,27 +1,58 @@
 <!doctype html>
 <html lang="en">
-<head>
+<!-- <head>
   <meta charset="utf-8">
   <title>T Bao Tran's Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head> -->
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout Project</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
   <body>
 
-    <div class="main-nav">
+<!--     <div class="main-nav">
         <ul class="nav">
           <li class="name">T Bao Tran</li>
           <li><a href="#">Home</a></li>
         </ul>
-    </div>
+    </div> -->
 
-    <header>
+<!--     <header>
       <img src="images/tbaotran.jpeg" alt="Picture of T Bao Tran" class="profile-image">
       <h1 class="tag name">Hello, I’m T Bao</h1>
       <p class="tag location">Residing in Milpitas, California.</p>
+    </header> -->
+
+    <header class="main-header clearfix">
+      <div class="wrapper clearfix">
+        <h2>T Bao Tran</h2>
+
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <div class="profile-banner clearfix">
+          <img src="img/about.jpg" 
+             alt="profile picture"
+             class="profile-picture"
+             />
+          <p class="profile-intro">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+        </div>
+
+      </div>
     </header>
 
-    <main class="flex">
+   <!--  <main class="flex">
       <div class="card">
         <h2>Background</h2>
         <p>I’m an IT professional with over 20 years of experience in designing, implementing and managemening technology solutions.</p>
@@ -42,14 +73,120 @@
         <p>I am a life-long learner and believe it is always good to learn something new and push your limit.</p>
       </div> 
 
-    </main>
-    <footer>
+    </main> -->
+    <section class="main-content">
+      <div class="wrapper clearfix">
+        <h5 id="portfolio">PORTFOLIO</h5>
+
+        <div class="portfolio-project">
+          <img src="img/project.png" 
+            class="project-img"
+             alt="Marketing Page Project"
+            />
+          <h3>Marketing Page</h3>
+          <p class="project-info">This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+        </div>
+
+        <div class="portfolio-project">
+          <img src="img/search.png"
+            class="project-img"
+             alt="Search Page Project"
+            />
+          <h3>Search Page</h3>
+          <p class="project-info">This project searches through a specific database to find information that the user is trying to look up.</p>
+        </div>
+
+        <div class="portfolio-project">
+          <img src="img/travel.png"
+            class="project-img"
+             alt="Travel App Project"
+            />
+          <h3>Travel App</h3>
+          <p class="project-info">This project compares travel times based on different transportation methods and tells you the best one.</p>
+        </div>
+
+        <div class="portfolio-project">
+          <img src="img/map.png"
+            class="project-img"
+             alt="Map of Favorite Spots Project"
+            />
+          <h3>Map of Favorite Spots</h3>
+          <p class="project-info">This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        </div>
+
+        <div class="portfolio-project">
+          <img src="img/photo.png"
+            class="project-img"
+             alt="Photo Gallery Project"
+            />
+          <h3>Photo Gallery</h3>
+          <p class="project-info">This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+        </div>
+
+        <div class="portfolio-project">
+          <img src="img/calculator.png"
+            class="project-img"
+             alt="Calculator Project"
+            />
+          <h3>Calculator</h3>
+          <p class="project-info">Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
+        </div>
+
+      </div>
+    </section>
+
+      <footer class="main-footer">
+
+
+      <div class="wrapper">
+        <h5 id="contact">CONTACT</h5>
+        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+
+        <div class="contact-info">
+          <p>Phone <b>+1 (650) 444-4970</b></p>
+          <p>Email <b>btran.it@gmail.com</b></p>
+          <ul>
+                <li><a href="https://twitter.com/tbaotran" class="social twitter">Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/tbaotran" class="social linkedin">LinkedIn</a></li>
+                <li><a href="https://github.com/tbaotran" class="social github">Github</a></li>
+              </ul>
+               <p class="copyright"> &copy; 2016, T Bao Tran</p>
+        </div>
+        
+    
+        <hr>
+
+        <div class="bottom-bar clearfix">
+          <span class="student-name">T Bao Tran</span>
+
+          <nav class="footer-nav-mobile">
+            <ul>
+              <li><a href="#">BACK TO TOP</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#contact">CONTACT</a></li>
+            </ul>
+          </nav>  
+        </div>  
+      </div>  
+    </footer>
+
+<!--     <footer>
       <ul>
         <li><a href="https://twitter.com/tbaotran" class="social twitter">Twitter</a></li>
         <li><a href="https://www.linkedin.com/in/tbaotran" class="social linkedin">LinkedIn</a></li>
         <li><a href="https://github.com/tbaotran" class="social github">Github</a></li>
       </ul>
       <p class="copyright"> &copy; 2016, T Bao Tran</p>
-    </footer>
+    </footer> -->
+
+
+
+
   </body>
   </html>

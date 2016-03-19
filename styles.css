@@ -3,14 +3,6 @@
   box-sizing: border-box;
 }
   
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
-}
 /* Link Styles */
 
 a {
@@ -21,103 +13,244 @@ a:hover {
   color: #6633ff;
 }
 
-/* Section Styles */
-
-.main-nav {
-  width: 100%;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
+a {
+  text-decoration: none;
+  color: #999;
 }
-.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
+a:hover {
+  color: #ffcc33;
+}
+
+/*  set font-family to Open Sans  */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*  center h2 and pad main heading  */
+h2 {
   margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/*  set font-weight and center h3  */
+h3 {
+  font-weight: normal;
+  margin: 0.9em auto;
+}
+
+/*  max-width for images  */
+img {
+  max-width: 100%;
+}
+
+/*  set p font-weight & line spacing  */
+p {
+  font-weight: 300;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+/*  remove all styling from lists  */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
   padding: 0;
 }
 
-.nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-}
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: white
+/*  center wrapper container and set width/padding  */
+.wrapper {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-header {
+
+/************************************
+  HEADING
+************************************/
+
+/*  centers elements in heading  */
+.main-header {
   text-align: center;
-  background: url('images/computer.jpg') no-repeat top center ;
-  background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-}
-header {
-  line-height: 1.5;
-}
-header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
-}
-.tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-} 
-.location {
-  background-color: #222;
-  color: yellow;
-}
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-}
-.card:hover {
-  border-color: #ff99ff;
+  margin: 0 auto;
+  padding: 0 16px;
 }
 
-ul.skills {
-  padding: 0;
+/*  create spacing for profile banner  */
+.profile-banner {
+  padding-top: 1.75em;
+  padding-bottom: 1.75em;
+}
+
+/*  set profile picture size/spacing  */
+.profile-picture {
+  width: 70%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/*  set profile intro paragraph's spacing  */
+.profile-intro {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+/************************************
+  COLORS
+************************************/
+
+/*  body background color */
+body {
+  background-color: rgb(249,249,249);
+}
+
+/*  heading and span text color  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: rgb(57,57,57);
+}
+
+/*  nav items background color */
+nav li {
+  background-color: #fff;
+}
+
+/*  nav link text color  */
+nav a {
+  color: rgb(57,57,57);
+}
+
+/* paragraph text color */
+p {
+  color: rgb(108,108,108);
+}
+
+/*  main content background color  */
+.main-content {
+  background-color: #fff;
+}
+
+/************************************
+  NAVIGATION
+************************************/
+
+/*  remove default list-style from all navs  */
+nav {
+  list-style: none; 
+}
+
+/*  set nav link font size and weight  */
+nav a {
+  font-size: 0.85em;
+  font-weight: bold;
+}
+
+/*  set spacing for top nav items  */
+.main-nav li {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  margin-bottom: 4px;
+}
+
+/************************************
+  SECTION: MAIN CONTENT
+************************************/
+
+/*  set padding/margin for main-content area  */
+.main-content {
+  padding-top: 2em;
+  margin-bottom: 1em;
+  padding-bottom: 2em;
+}
+
+/*  centers Portfolio section heading and adds margins  */
+#portfolio {
   text-align: center;
+  margin-top: 1em;
+  margin-bottom: 3.75em;
 }
 
-.skills li {
-  border-radius: 6px;
+/************************************
+  PORTFOLIO PROJECTS
+************************************/
+
+/*  center/provide spacing for portfolio projects on page  */
+.portfolio-project {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1em;
+  margin-top:1em;
+  margin-bottom: 0.9em;
+}
+
+/*  set font-size/line-height for project info  */
+.project-info {
+  line-height: 1.5em;
+  font-size: 16px;
+}
+
+/************************************
+  FOOTER
+************************************/
+
+/*  set margin/center bottom bar  */
+.bottom-bar {
+  margin: 1em auto;
+}
+
+/*  set spacing for contact info  */
+.contact-info {
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+}
+
+/*  set margin/center contact info  */
+.contact-info p {
+  margin: 1em auto;
+}
+
+/*  sets all bottom footer navs to float on right side of page  */
+.footer-nav,
+.footer-nav-mobile {
+  float: right;
+}
+
+/*  hides footer-nav for non-mobile screen sizes  */
+.footer-nav {
+  display: none;
+}
+
+/*  display footer-nav for mobile screen sizes  */
+.footer-nav-mobile {
   display: inline-block;
-  background: #E68A04;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0460E6;
+/*  set spacing/center footer  */
+.main-footer {
+  margin: 1em auto;
+  text-align: center;
+  padding-top: 1em;
+}
+
+/*  set margin/center paragraph about contacting me  */
+.main-footer p {
+  margin: 2em auto;
+}
+
+/*  float student name at bottom to left side and set font properties and margins */
+.student-name {
+  float: left;
+  font-size: 0.83em;
+  font-weight: bold;
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 footer {
@@ -167,41 +300,151 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
+/************************************
+  MEDIA QUERIES
+************************************/
+
+/*  For tablet-sized screens (768px+) */
+@media (min-width: 768px) {
   
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
+  /*  resize wrapper width/padding  */
+  .wrapper {
+    max-width: 768px;
+    padding: 0 32px;
   }
 
-  header {
-    min-height: 470px;
+  /*  change main-nav to horizontal nav; also adjust bg color and margins  */
+  .main-nav li {
+    display: inline-block;
+    background-color: rgb(249,249,249);
+    margin-left: 1em;
+    margin-right: 1em;
   }
 
-  .nav {
-    max-width: 1200px;
-    padding: 0 30px;
+  /*  create bottom padding for profile banner  */
+  .profile-banner {
+    padding-bottom: 3em;
   }
 
-
-  main {
-    padding-top: 20px;
+  /*  adjust profile picture max size and float to right side of page  */
+  .profile-picture {
+    max-width: 40%;
+    float: right; 
   }
 
-  main p {
-    line-height: 1.6em;
+  /*  adjust profile intro size and float to left side of page  */
+  .profile-intro {
+    max-width: 60%;
+    font-size: 1.25em;
+    float:left;
+    text-align: left;
   }
 
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 40px auto;
+  /*  change profile contents from vertical to horizontal  */
+  .profile-picture,
+  .profile-intro {
+    display: inline-block;  
   }
 
+  /*  resize portfolio projects to display in two columns  */
+  .portfolio-project {
+    display: inline-block;
+    width: 49%;
+    margin-right: 4px;
+  }
+
+  /*  center project info/adjust size  */
+  .project-info {
+    margin: 0 auto;
+    font-size: 14px;
+    width: 80%;
+  }
+
+  /*  adjust width of paragraph about contacting me  */
+  .main-footer p {
+    width: 60%;
+  }
+
+  /*  hides the mobile footer nav  */
+  .footer-nav-mobile {
+    display: none;
+  }
+
+  /*  displays the footer nav for tablet/desktop size screens  */
+  .footer-nav {
+    display: inline-block;
+  }
+
+  /*  displays footer nav items horizontally; also adjust margins and bg color  */
+  .footer-nav li {
+    display: inline-block;
+    margin: 0 1em;
+    background-color: rgb(249,249,249);
+  }
 }
 
+/*  For desktop-sized screens (1024px+)  */
+@media (min-width: 1024px) {
+  
+  /*  resize wrapper max-width  */
+  .wrapper {
+    max-width: 1024px;
+  }
+
+  /*  float main header to left and display inline with main-nav  */
+  h2 {
+    display: inline-block;
+    float: left;
+  }
+
+  /*  float main-nav to right size of page and adjust spacing  */
+  .main-nav {
+    position: relative;
+    float:  right;
+    margin: 1em 0;
+    z-index: 100;
+  }
+
+  /*  change position of profile banner to 'relative' to position elements inside  */
+  .profile-banner {
+    position: relative;
+  }
+
+  /*  float profile picture to right and clear the main-nav  */
+  .profile-picture {
+    float: right;
+    clear: right;
+  }
+
+  /*  adjust width/change position to absolute; also positions intro paragraph on left side of profile picture  */
+  .profile-intro {
+    position: absolute;
+    max-width: 55%;
+    bottom: 4em;
+    left: 0;
+  }
+
+  /*  centers content inside main-content and adjust margins  */
+  .main-content {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  /*  resize portfolio projects to display in three columns; also adjust margin spacing  */
+  .portfolio-project {
+    width: 30%;
+    margin: 32px 12px;
+  }
+
+  /*  adjust project info sizing  */
+  .project-info  {
+    width: 75%;
+  }
+}
+
+/*  clearfix hack for clearing floats  */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
